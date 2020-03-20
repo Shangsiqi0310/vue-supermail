@@ -1,14 +1,12 @@
 import Vue from 'vue' //引入vue
 import App from './App.vue' //引入组件
 
-//mint-ui的引入
-import 'mint-ui/lib/style.css'
-import MintUI from 'mint-ui' //引入包 全部引入
-Vue.use(MintUI)
+import { Tabbar, TabbarItem, NavBar } from 'vant'
+Vue
+    .use(Tabbar)
+    .use(TabbarItem)
+    .use(NavBar)
 
-//mui的引入
-import './assets/mui/css/mui.min.css'
-import './assets/mui/css/icons-extra.css'
 
 import router from './router/index'
 import store from './store/index'

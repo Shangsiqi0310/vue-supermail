@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <div>哈哈</div>
+    <router-view></router-view>
+    <Tabbar></Tabbar>
   </div>
 </template>
 
 <script>
 
-
+import Tabbar from 'components/common/Tabbar.vue'
 export default {
   name: 'App',
   components: {
-   
+   Tabbar
   }
 }
 </script>
